@@ -5,4 +5,5 @@ Please view the PPT online by this URL:
 [Mesos_sharing](https://github.microstrategy.com/pages/DevOps/Slides/mesos_sharing/#/)
 
 [R_language_sharing](https://github.microstrategy.com/pages/DevOps/Slides/R_sharing/#/)
-[Docker_sharing](https://github.microstrategy.com/pages/DevOps/Slides/Docker_sharing/#/)
+
+[Docker_sharing](https://github.microstrategy.com/pages/DevOps/Slides/docker_sharing/#/)
