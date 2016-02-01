@@ -36,9 +36,9 @@
 
 
 
-<div class="sl-block" data-block-type="image" data-block-id="c4cc8bd81a2316ac675ca5901debb9bb" style="min-width: 30px; min-height: 30px; width: 360px; height: 321.667px; left: 274px; top: 153px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="216" data-natural-height="193" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/378418/images/2190292/docker.png"></div></div>
-<div class="sl-block" data-block-type="text" data-block-id="7ee4ed9553b8c26808d4c849686d3657" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 154px; top: 508px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
-<p>Container</p>
+<div class="sl-block" data-block-type="image" data-block-id="c4cc8bd81a2316ac675ca5901debb9bb" style="min-width: 30px; min-height: 30px; width: 360px; height: 321.667px; left: 300px; top: 134px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="216" data-natural-height="193" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/378418/images/2190292/docker.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7ee4ed9553b8c26808d4c849686d3657" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 490px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>container</p>
 </div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="967c21c4e9cdc77cecc7b205115268eb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker</h2>
 </div></div>
@@ -154,88 +154,68 @@
 </section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="0bcfd38ae84f0b5f5aa7ff745a874b8f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker 技术内幕</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="e9d6bbbad554e8720c62bb3e24ce2b05"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">命名空间</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="e9d6bbbad554e8720c62bb3e24ce2b05"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<li style="text-align:left">命名空间</li>
 </div></div>
 
 <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 100px; top: 261px;" data-block-id="49f381a6e2debaa56a02226292ac84c9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
-<p style="text-align:left">UTS 空间</p>
-
-<p style="text-align:left"> </p>
-
-<p style="text-align:left">隔离hostname</p>
+<p style="text-align:left">UTS 空间 - 隔离hostname</p>
 
 <p style="text-align:left"> </p>
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" data-block-type="code" data-block-id="4be7a483cd9aa29bf66b37f4ec393046" style="min-width: 30px; min-height: 30px; width: 758px; height: 68px; left: 135px; top: 422px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
+<div class="sl-block" data-block-type="code" data-block-id="4be7a483cd9aa29bf66b37f4ec393046" style="min-width: 30px; min-height: 30px; width: 758px; height: 68px; left: 100px; top: 350px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
             CLONE_NEWUTS | SIGCHLD, NULL);
 </code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="9ed0d96639cbae9e4bdef9e2a4c3b8fa"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker 技术内幕</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="57cdb97d27227b3f832a36287d45441e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">命名空间</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="57cdb97d27227b3f832a36287d45441e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<li style="text-align:left">命名空间</li>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 100px; top: 261px;" data-block-id="54f8df0f1e6409539ffb39e6bd43d87d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
-<p style="color:rgb(255, 255, 255); text-align:left">IPC空间</p>
-
-<p style="color:rgb(255, 255, 255); text-align:left"> </p>
-
-<p style="text-align:left">隔离进程间通信</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 100px; top: 241px;" data-block-id="54f8df0f1e6409539ffb39e6bd43d87d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
+<p style="color:rgb(255, 255, 255); text-align:left">IPC空间 - 隔离进程间通信</p>
 </div></div>
-<div class="sl-block" data-block-type="code" data-block-id="55b25e9d89075e9de71d15bff017c4b7" style="min-width: 30px; min-height: 30px; width: 715px; height: 52px; left: 123px; top: 429px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
+<div class="sl-block" data-block-type="code" data-block-id="55b25e9d89075e9de71d15bff017c4b7" style="min-width: 30px; min-height: 30px; width: 715px; height: 52px; left: 100px; top: 324px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
        CLONE_NEWUTS | CLONE_NEWIPC | SIGCHLD, NULL);
 </code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="37f6be850da35ef5eabc00bd63343acc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker 技术内幕</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="f498c97aef397b68c4f55c735f6baea5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">命名空间</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="f498c97aef397b68c4f55c735f6baea5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<li style="text-align:left">命名空间</li>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 100px; top: 261px;" data-block-id="c0d5c38972903bffa43261111bf60f99"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
-<p style="color:rgb(255, 255, 255); text-align:left">PID空间</p>
-
-<p style="color:rgb(255, 255, 255); text-align:left"> </p>
-
-<p style="color:rgb(255, 255, 255); text-align:left">隔离进程ID</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 107px; top: 232px;" data-block-id="c0d5c38972903bffa43261111bf60f99"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
+<p style="color:rgb(255, 255, 255); text-align:left">PID空间 - 隔离进程ID</p>
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" data-block-type="code" data-block-id="854994d4ed58c678b75bad054dfeb8eb" style="min-width: 30px; min-height: 30px; width: 708px; height: 59px; left: 126px; top: 411px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
+<div class="sl-block" data-block-type="code" data-block-id="854994d4ed58c678b75bad054dfeb8eb" style="min-width: 30px; min-height: 30px; width: 708px; height: 59px; left: 107px; top: 328px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
        CLONE_NEWUTS | CLONE_NEWPID | SIGCHLD, NULL); 
 </code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="915ebcd34bb19b9da44c1da960295f3a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker 技术内幕</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="9ab96ab0b44f7f0c4228c3ddc496a918"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">命名空间</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="9ab96ab0b44f7f0c4228c3ddc496a918"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<li style="text-align:left">命名空间</li>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 100px; top: 261px;" data-block-id="7176aa7bc51c437c761fac6013262ced"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
-<p style="color:rgb(255, 255, 255); text-align:left">Mount空间</p>
-
-<p style="color:rgb(255, 255, 255); text-align:left"> </p>
-
-<p style="color:rgb(255, 255, 255); text-align:left">隔离文件系统</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 111px; top: 237px;" data-block-id="7176aa7bc51c437c761fac6013262ced"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
+<p style="color:rgb(255, 255, 255); text-align:left">Mount空间 - 隔离文件系统</p>
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" data-block-type="code" data-block-id="0e5c20173ff56112a8a2f6a70feb3742" style="min-width: 30px; min-height: 30px; width: 774px; height: 63px; left: 127px; top: 427px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
+<div class="sl-block" data-block-type="code" data-block-id="0e5c20173ff56112a8a2f6a70feb3742" style="min-width: 30px; min-height: 30px; width: 774px; height: 63px; left: 106px; top: 319px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>int container_pid = clone(container_main, container_stack+STACK_SIZE, 
         CLONE_NEWUTS | CLONE_NEWPID | CLONE_NEWNS | SIGCHLD, NULL);
 </code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="c0bd8cbc98c98f80d8fb36735138eb51"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker 技术内幕</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="c7e5643db95c22f75ca80255b62d3904"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">命名空间</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="c7e5643db95c22f75ca80255b62d3904"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<li style="text-align:left">命名空间</li>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 100px; top: 261px;" data-block-id="a656cdfa3d7497d1228acd19e86fdccb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
-<p style="color:rgb(255, 255, 255); text-align:left"><span style="color:rgb(255, 255, 255); text-align:left">Network空间</span></p>
-
-<p style="color:rgb(255, 255, 255); text-align:left"> </p>
-
-<p style="color:rgb(255, 255, 255); text-align:left">隔离网络环境</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 112px; top: 233px;" data-block-id="a656cdfa3d7497d1228acd19e86fdccb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
+<p style="color:rgb(255, 255, 255); text-align:left"><span style="color:rgb(255, 255, 255); text-align:left">Network空间 - </span>隔离网络环境</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"> </p>
 
@@ -243,11 +223,11 @@
 </div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="789b006c80fa0d632f879d401c38488d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker 技术内幕</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="f9a6a963f63cf115be03e28219396d3e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">Control Group</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 79px; top: 156px;" data-block-id="f9a6a963f63cf115be03e28219396d3e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<li style="text-align:left">Control Group</li>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 100px; top: 261px;" data-block-id="3c65dd6b677c40a1da087061893d311c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 109px; top: 223px;" data-block-id="3c65dd6b677c40a1da087061893d311c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
 <p style="color:rgb(255, 255, 255); text-align:left">Resource limitation: 限制资源使用</p>
 
 <p style="color:rgb(255, 255, 255); text-align:left"><br>
@@ -261,7 +241,7 @@ Prioritization: 优先级控制</p>
 
 <p style="text-align:left"> </p>
 </div></div>
-<div class="sl-block" data-block-type="code" data-block-id="ffd81dd42f35f6b44514733e3180946e" style="min-width: 30px; min-height: 30px; width: 500px; height: 57px; left: 100px; top: 443px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>$ mount -t cgroup</code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="d1742f0bc55bd0a1cdb9e19056173676"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<div class="sl-block" data-block-type="code" data-block-id="ffd81dd42f35f6b44514733e3180946e" style="min-width: 30px; min-height: 30px; width: 500px; height: 57px; left: 109px; top: 420px;"><div class="sl-block-content" style="z-index: 14;"><pre><code>$ mount -t cgroup</code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="d1742f0bc55bd0a1cdb9e19056173676"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2 style="text-align:left">Docker 技术解析</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 156px;" data-block-id="6975aa44abf99028ac77aab210a43416"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
@@ -306,7 +286,7 @@ Prioritization: 优先级控制</p>
      </li>
 </ul>
 </div></div>
-<div class="sl-block" data-block-type="text" data-block-id="9a03c1aae800aa6df25bcc54b4d72601" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: -399px; top: 105px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>Text</p></div></div>
+
 <div class="sl-block" data-block-type="text" data-block-id="227bf9bc5a8ae5970c0e6b79d692ea50" style="height: auto; min-width: 30px; min-height: 30px; width: 645px; left: 182px; top: 381px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
 <p>  <span><span style="font-size:0.9em">创建overlay 类型的网络（open vSwitch , VXLAN）</span></span></p>
 </div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="979276f4a683c4bd6f31ceddaf6bca11"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
@@ -318,7 +298,7 @@ Prioritization: 优先级控制</p>
 </ul>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: -399px; top: 105px;" data-block-id="38fbc36710c35e563b36a3231a248834"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>Text</p></div></div>
+
 <div class="sl-block" data-block-type="image" data-block-id="5cef31a09793839535231db80426e1d5" style="min-width: 30px; min-height: 30px; width: 405.851px; height: 141px; left: 289px; top: 232px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="639" data-natural-height="222" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/378418/images/2190318/network.jpg"></div></div>
 <div class="sl-block" data-block-type="text" data-block-id="86c82ce213c32f3d6a4f3c69d139320a" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 79px; top: 429px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" dir="ui">
 <ul>
@@ -333,7 +313,7 @@ Prioritization: 优先级控制</p>
 </div></div>
 
 
-<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: -399px; top: 105px;" data-block-id="d64a398e3cdf04069f9e5d02d0d1d3d3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>Text</p></div></div>
+
 
 <div class="sl-block" data-block-type="text" style="height: auto; width: 678px; left: 80px; top: 196px;" data-block-id="6e1f8aabe108c28dc151d252cb6956c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" dir="ui" data-has-custom-html="">
 <ul>
