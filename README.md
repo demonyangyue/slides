@@ -1,9 +1,9 @@
 Please view the PPT online by this URL:
 
-[DevOps Projects](https://github.microstrategy.com/pages/DevOps/Slides/DevOps_projects/#/)
+[DevOps Projects](https://github.com/demonyangyue/pages/slides/DevOps_projects/#/)
 
-[Mesos_sharing](https://github.microstrategy.com/pages/DevOps/Slides/mesos_sharing/#/)
+[Mesos_sharing](https://github.com/demonyangyue/pages/slides/mesos_sharing/#/)
 
-[R_language_sharing](https://github.microstrategy.com/pages/DevOps/Slides/R_sharing/#/)
+[R_language_sharing](https://github.com/demonyangyue/pages/slides/R_sharing/#/)
 
-[Docker_sharing](https://github.microstrategy.com/pages/DevOps/Slides/docker_sharing/#/)
+[Docker_sharing](https://github.com/demonyangyue/pages/slides/docker_sharing/#/)
