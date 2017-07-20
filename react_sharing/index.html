@@ -658,6 +658,29 @@ export default ToggleableTimerForm;</code></pre></div></div></section><section d
 	<br>
 	<li style="text-align:left;color:#FFFFFF">History API</li>
 </ul>
+</div></div></section><section data-background-color="#000000" data-id="24aa59c065cb9aba1a1cf5e117511e00">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 413px; left: 29px; top: 84px; height: auto;" data-block-id="789cd36a4347caef937281183366920b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;" dir="ui" data-has-custom-html="">
+<h2><font color="#ffffff">React Router</font></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 461px; left: 80px; top: 197px; height: auto;" data-block-id="4571169ad70aaec9de64373a440401be"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;" dir="ui" data-has-custom-html="">
+<p><font color="#faaaaa">核心组件</font></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 301px; left: 202px; top: 292px;" data-block-id="0b526647e7d1d346dfa9e817d362f85e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<ul>
+	<li style="text-align:left;color:#FFFFFF">&lt;Link&gt;</li>
+	<br>
+	<li style="text-align:left;color:#FFFFFF">&lt;Redirect&gt;</li>
+	<br>
+	<li style="text-align:left;color:#FFFFFF">&lt;Match&gt;</li>
+	<br>
+	<li style="text-align:left;color:#FFFFFF">&lt;Miss&gt;</li>
+</ul>
 </div></div></section><section data-background-color="#000000" data-id="ac391e0274645f38531c006ed0a0ea0d">
 
 
@@ -671,9 +694,22 @@ export default ToggleableTimerForm;</code></pre></div></div></section><section d
 <div class="sl-block" data-block-type="text" style="width: 461px; left: 80px; top: 197px; height: auto;" data-block-id="541cfafc174748e0261f3c54f4a0affe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left;" dir="ui" data-has-custom-html="">
 <p><font color="#faaaaa">单页应用(SPA)</font></p>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 318px;" data-block-id="18cdaeabd78fb6c581cd6011220ed713"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
-<p><span style="color:#FFFFFF">Webpack -- 打包生成bundle.js</span></p>
-</div></div></section><section data-background-color="#000000" data-id="b2b3122ff4b04ff149a6f89df43282c7">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 734px; left: 80px; top: 293px;" data-block-id="18cdaeabd78fb6c581cd6011220ed713"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="color:#FFFFFF">Webpack -- 解析模块依赖图，打包生成bundle.js</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 683px; height: 279px; left: 117px; top: 363px;" data-block-id="77a57aa33193e72012bf85c486a68c72"><div class="sl-block-content" style="z-index: 14;"><pre class="javascript"><code>var webpack = require('webpack');
+
+module.exports = {
+  devtool: debug ? "inline-sourcemap" : null,
+  entry: "./js/scripts.js",
+  output: {
+    path: __dirname + "/js",
+    filename: "scripts.min.js"
+  },
+  plugins: debug ? [] : [
+    new webpack.optimize.DedupePlugin()
+  ],
+};</code></pre></div></div></section><section data-background-color="#000000" data-id="b2b3122ff4b04ff149a6f89df43282c7">
 
 
 
@@ -816,7 +852,7 @@ export default ToggleableTimerForm;</code></pre></div></div></section><section d
 <ul>
 	<li style="text-align:left;color:#FFFFFF">设计模式，大象无形</li>
 	<br>
-	<li style="text-align:left;color:#FFFFFF">本质上类似消息队列</li>
+	<li style="text-align:left;color:#FFFFFF">类似消息队列</li>
 </ul>
 </div></div></section><section data-background-color="#000000" data-id="26eabf2aabe984728066992ed0fcd4a6">
 
@@ -829,22 +865,42 @@ export default ToggleableTimerForm;</code></pre></div></div></section><section d
 <h2><font color="#ffffff">Integration</font></h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 461px; left: 80px; top: 197px; height: auto;" data-block-id="9c66ca1473ea45da09d29ff30cc047cb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left;" dir="ui" data-has-custom-html=""></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 413px; left: 104px; top: 197px;" data-block-id="8dd07945759aa8142cd46bd68203c850"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html="">
-<p style="text-align:left"><span style="color:#FAAAAA">目标</span></p>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 536px; left: 104px; top: 217px;" data-block-id="8dd07945759aa8142cd46bd68203c850"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html="">
+<p style="text-align:left"><font color="#faaaaa">基础形态 -- 在页面中嵌入component.js</font></p>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 114px; top: 262px;" data-block-id="f02aada86b19aa7bef18e0f343720d4a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-has-custom-html="">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 91px; top: 317px;" data-block-id="f02aada86b19aa7bef18e0f343720d4a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-has-custom-html="">
+<ul>
+	<li style="color:#FFFFFF">难以管理依赖</li>
+	<br>
+	<li style="color:#FFFFFF">性能无法接受</li>
+</ul>
+</div></div>
+
+</section><section data-background-color="#000000" data-id="5f8c10b983756c3a16779a8395da0c01">
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 413px; left: 29px; top: 84px; height: auto;" data-block-id="f648018ab5749ee09ca411eeacefa46b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;" dir="ui" data-has-custom-html="">
+<h2><font color="#ffffff">Integration</font></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 461px; left: 80px; top: 197px; height: auto;" data-block-id="936e1bb97ce1e0dee2e002b6088b53fc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;" dir="ui" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 413px; left: 104px; top: 197px;" data-block-id="499f378faa670c8fa481471920c38f16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html="">
+<p style="text-align:left"><font color="#faaaaa">进化形态 -- 使用WebPack</font></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 111px; top: 280px;" data-block-id="50d2f7f740b5eb46f6b16f5834497c03"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html="">
 <ul>
 	<li style="color:#FFFFFF">自动管理依赖</li>
+	<br>
 	<li style="color:#FFFFFF">编译打包bundle</li>
+	<br>
 	<li style="color:#FFFFFF">Hot reloading/ Hot swapping</li>
 </ul>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 413px; left: 104px; top: 471px;" data-block-id="275361dd74675712fbfa968df7e8c9ab"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-has-custom-html="">
-<p style="text-align:left"><font color="#faaaaa">方案</font></p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 208px; top: 553px;" data-block-id="0ba6483ff89119cd07372ec065408105"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
-<p style="text-align:left"><a href="https://webpack.github.io/" target="_blank"><span style="color:#FFFFFF">WebPack</span></a></p>
-</div></div></section><section class="stack" data-id="b7c77f2ee83bdfdd615c932807072823"><section data-background-color="#000000" data-id="39c3385d859b134f75a34e98c18e4247">
+
+</section><section class="stack" data-id="b7c77f2ee83bdfdd615c932807072823"><section data-background-color="#000000" data-id="39c3385d859b134f75a34e98c18e4247">
 
 
 
@@ -856,18 +912,13 @@ export default ToggleableTimerForm;</code></pre></div></div></section><section d
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 461px; left: 80px; top: 197px; height: auto;" data-block-id="630d24241c29d4a5d6092e40d8bb02ca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left;" dir="ui" data-has-custom-html=""></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 413px; left: 104px; top: 197px;" data-block-id="c4de0760ea502719a8eb63fb0497d0ef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html="">
-<p style="text-align:left"><font color="#faaaaa">问题</font></p>
+<p style="text-align:left"><font color="#faaaaa">究极形态 -- 前后端分离</font></p>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 668px; left: 114px; top: 262px;" data-block-id="c19b4191844b544c7e1882caa3e16958"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-has-custom-html="">
-<ul>
-	<li style="color:#FFFFFF">开发和生成环境，用的是不同bundle.js</li>
-	<li style="color:#FFFFFF">后端服务器如何区分开发与生成环境</li>
-</ul>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 413px; left: 94px; top: 381px;" data-block-id="81d8900ed14ecf7eade7817aa4d9be15"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-has-custom-html="">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 413px; left: 104px; top: 292px;" data-block-id="81d8900ed14ecf7eade7817aa4d9be15"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-has-custom-html="">
 <p style="text-align:left"><font color="#faaaaa">方案</font></p>
 </div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 684px; height: 143px; left: 138px; top: 438px;" data-block-id="b8182af24ff1d921119c3f58d9e9c9d8"><div class="sl-block-content" style="z-index: 17;"><img data-natural-width="1148" data-natural-height="240" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/378418/images/3970496/webpack-proxy.png"></div></div></section><section data-background-color="#000000" data-id="c17c53768f8239935359f12addc8f6df">
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 684px; height: 143px; left: 160px; top: 397px;" data-block-id="b8182af24ff1d921119c3f58d9e9c9d8"><div class="sl-block-content" style="z-index: 17;"><img data-natural-width="1148" data-natural-height="240" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/378418/images/3970496/webpack-proxy.png"></div></div></section><section data-background-color="#000000" data-id="c17c53768f8239935359f12addc8f6df">
 
 
 
@@ -947,7 +998,7 @@ export default ToggleableTimerForm;</code></pre></div></div></section><section d
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":378418,"username":"demonyangyue","name":"","description":"","thumbnail_url":"https://www.gravatar.com/avatar/559a8fa59f44dcda2da8907d4a4723f3?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":214544,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"demonyangyue@gmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":1533765,"storage_limit":262144000},"deck":{"id":1036324,"slug":"deck-4","title":"Learning React","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-07-04T12:22:26.252Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/0994bca68dabbd833eb1661db7ed5d75/thumb.jpg?1415963036","view_count":3,"user":{"id":378418,"username":"demonyangyue","name":"","description":"","thumbnail_url":"https://www.gravatar.com/avatar/559a8fa59f44dcda2da8907d4a4723f3?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":214544,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1499400393594,"font_typekit":null,"font_google":null,"notes":{}}};
+	var SLConfig = {"current_user":{"id":378418,"username":"demonyangyue","name":"","description":"","thumbnail_url":"https://www.gravatar.com/avatar/559a8fa59f44dcda2da8907d4a4723f3?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":214544,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"demonyangyue@gmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":1533765,"storage_limit":262144000},"deck":{"id":1036324,"slug":"deck-4","title":"Learning React","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-07-04T12:22:26.252Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/0994bca68dabbd833eb1661db7ed5d75/thumb.jpg?1415963036","view_count":4,"user":{"id":378418,"username":"demonyangyue","name":"","description":"","thumbnail_url":"https://www.gravatar.com/avatar/559a8fa59f44dcda2da8907d4a4723f3?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":214544,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1500519929914,"font_typekit":null,"font_google":null,"notes":{}}};
 </script>
 
 		<script>
